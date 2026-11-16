@@ -1,7 +1,7 @@
 /* ============ EDIT YOUR CONTENT HERE ============ */
 const SITE = {
-  name: "Your Name",
-  contact: "you@email.com\n+1 (000) 000-0000\n@yourhandle\nCity, State",
+  name: "Hyoeun Kelly Kang",
+  contact: "hyoeunkelly@email.com\nn@kivestudio\nLos Angeles",
   about: ["Write a short bio here.", "Add a second paragraph if you like."]
 };
 
