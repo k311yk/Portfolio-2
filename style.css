@@ -1,7 +1,8 @@
-:root{--ink:#111;--paper:#fff;--line:#d9d9d9;--mono:"IBM Plex Mono","Courier New",monospace;--sans:"Helvetica Neue",Helvetica,Arial,sans-serif}
+@font-face{font-family:"Hanken Grotesk";src:url("fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");font-weight:100 900;font-display:swap}
+:root{--ink:#111;--paper:#fff;--line:#d9d9d9;--mono:"Hanken Grotesk",Helvetica,Arial,sans-serif;--sans:"Hanken Grotesk",Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--mono);font-size:13px;line-height:1.55;color:var(--ink);background:var(--paper)}
+body{font-family:var(--mono);font-size:15px;line-height:1.55;color:var(--ink);background:var(--paper)}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
 [hidden]{display:none!important}
@@ -15,9 +16,9 @@ ul{list-style:none}
 body.in-page #topbar{display:none}
 
 /* home */
-#home{height:100vh;position:relative;overflow:hidden;background:#e8e8e8}
+#home{height:100vh;cursor:pointer;position:relative;overflow:hidden;background:#e8e8e8}
 #homeImg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-#homeTitle{position:absolute;left:2vw;bottom:2vw;font:700 clamp(64px,15vw,260px)/.8 var(--sans);letter-spacing:-.07em;color:#000;mix-blend-mode:normal}
+#homeTitle{position:absolute;font-weight:700;left:2vw;bottom:2vw;font:700 clamp(64px,15vw,260px)/.8 var(--sans);letter-spacing:-.07em;color:#000;mix-blend-mode:normal}
 
 /* split layout */
 .split{display:grid;grid-template-columns:minmax(260px,32vw) 1fr;min-height:100vh}
