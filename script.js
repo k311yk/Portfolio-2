@@ -11,12 +11,13 @@ const PROJECTS = [
   { slug: "Ctrl+Save", title: "Ctrl+Save", subtitle: "[Short descriptor]",
     images: ["ctrl_save2.png", "ctrl_save_alice.png", "DSC00558.png", "DSC00787.png", "ctrl_save_romi.png", "ctrl_save_shuruq.png", "ctrl_save_devin.png", "DSC00923.png", "DSC00519.png"],
     text: ["Ctrl+Save is an interdisciplinary group exhibition curated and produced by Kive Studio, bringing together eight artists working across installation, sculpture, moving image, performance, and interactive art. Exploring the intersections of perception, memory, and systems of control, the exhibition examines how technological and cultural systems shape what is recorded, reproduced, preserved, and made visible.", "As Co-Curator and Creative Producer, I led curatorial research and conceptual development, working closely with artists and collaborators to translate the exhibition's framework into a cohesive spatial and experiential environment. My role extended across exhibition design, spatial planning, creative direction, technical coordination, partnerships, and public programming, overseeing the project from initial research through installation and realization.", "Situated within Art/Space 114, a former bank building in Downtown Los Angeles, the exhibition also engages the architectural and institutional history of its site, reframing a former infrastructure of financial exchange as a space for artistic experimentation and cultural dialogue."],
-   role: { Role: "Co-curator, Exhibition Designer, Programming Director, Producer, Graphic Designer", Year: "2026", For: "Kive Studio" },
+   role: { Role: "Co-curator, Exhibition Designer, Programming Director, Producer, Graphic Designer", Year: "2026", For: "Kive Studio" , Team: "Isabel Murphy"},
     scatter: ["images/p1-a.jpg", "images/p1-b.jpg", "images/p1-c.jpg", "images/p1-d.jpg"] },
-  { slug: "project-two", title: "Project Two", subtitle: "[Short descriptor]",
+  
+  { slug: "Agathus Studios", title: "Agathus Studios", subtitle: "[Short descriptor]",
     images: ["images/p2-1.jpg", "images/p2-2.jpg"],
-    text: ["Describe the project here."],
-    role: { Role: "Art Director", Year: "2026", Client: "Client name", Team: "Names" },
+    text: ["As Artistic Director for Agathus Studios’ showroom, retail, and client projects, I developed an artist program that integrates contemporary art into the studio’s broader design practice. I curate and source artists and artworks for residential and commercial environments, develop artist collaborations and commissions, and shape the visual language of the showroom and its public-facing programming. My role spans artistic direction, creative strategy, graphic design, and creative production for the studio's showroom, retail shop, and architectural projects."],
+    role: { Role: "Art & Creative Director, Graphic Designer, Producer", Year: "2024 - 2026", Client: "Agathus Studios"},
     scatter: ["images/p2-a.jpg", "images/p2-b.jpg"] }
 ];
 /* ================================================= */
