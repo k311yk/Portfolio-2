@@ -25,7 +25,7 @@ const $ = s => document.querySelector(s);
 const el = (t, a = {}, h = "") => Object.assign(document.createElement(t), a, h ? { innerHTML: h } : {});
 
 // top menu
-$("#topnav").innerHTML = `<a href="#about">About</a><a href="#work/${PROJECTS[0].slug}">Work</a><a href="#contact">Contact</a>`;
+$("#topnav").innerHTML = `<a href="#about">About</a><a href="#work/${PROJECTS[0].slug}">Work</a>`;
 $("#homeTitle").textContent = SITE.name;
 $("#sideContact").textContent = SITE.contact;
 
@@ -35,7 +35,7 @@ function route() {
   document.body.classList.toggle("in-page", !isHome);
   $("#home").hidden = !isHome; $("#page").hidden = isHome;
   if (isHome) return;
-  if (page === "contact") { renderAbout(true); } else if (page === "about") { renderAbout(); }
+  if (page === "about") renderAbout();
   else renderProject(PROJECTS.find(p => p.slug === slug) || PROJECTS[0]);
   buildSide(page, slug);
   window.scrollTo(0, 0);
@@ -47,12 +47,11 @@ function buildSide(page, slug) {
     <li><a href="#about"${cur(page === "about")}>About</a></li>
     <li><details ${page === "work" ? "open" : ""}><summary>Work</summary><ul>
       ${PROJECTS.map(p => `<li><a href="#work/${p.slug}"${cur(page === "work" && (slug || PROJECTS[0].slug) === p.slug)}>${p.title}</a></li>`).join("")}
-    </ul></details></li>
-    <li><a href="#contact"${cur(page === "contact")}>Contact</a></li>`;
+    </ul></details></li>`;
 }
 
-function renderAbout(contactOnly) {
-  $("#content").innerHTML = `<div class="about">${contactOnly ? `<h3>Contact</h3><p>${SITE.contact.replace(/\n/g, "<br>")}</p>` : SITE.about.map(t => `<p>${t}</p>`).join("")}</div>`;
+function renderAbout() {
+  $("#content").innerHTML = `<div class="about">${SITE.about.map(t => `<p>${t}</p>`).join("")}</div>`;
 }
 
 function renderProject(p) {
@@ -84,4 +83,8 @@ function initSlider(n) {
   if (n < 2) box.querySelectorAll(".zone").forEach(z => z.hidden = true);
 }
 
+// click anywhere on the home screen to enter Work
+$("#home").addEventListener("click", () => { location.hash = `#work/${PROJECTS[0].slug}`; });
+$("#home").tabIndex = 0;
+$("#home").addEventListener("keydown", e => { if (e.key === "Enter") location.hash = `#work/${PROJECTS[0].slug}`; });
 addEventListener("hashchange", route); route();
