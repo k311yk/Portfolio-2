@@ -14,7 +14,7 @@ const PROJECTS = [
    role: { Role: "Co-curator, Exhibition Designer, Programming Director, Producer, Graphic Designer", Year: "2026", For: "Kive Studio" , Team: "Isabel Murphy"},
     scatter: ["images/p1-a.jpg", "images/p1-b.jpg", "images/p1-c.jpg", "images/p1-d.jpg"] },
   
-  { slug: "Agathus Studios", title: "Agathus Studios", subtitle: "[Short descriptor]",
+  { slug: "agathus-studios", title: "Agathus Studios", subtitle: "[Short descriptor]",
     images: ["images/p2-1.jpg", "images/p2-2.jpg"],
     text: ["As Artistic Director for Agathus Studios’ showroom, retail, and client projects, I developed an artist program that integrates contemporary art into the studio’s broader design practice. I curate and source artists and artworks for residential and commercial environments, develop artist collaborations and commissions, and shape the visual language of the showroom and its public-facing programming. My role spans artistic direction, creative strategy, graphic design, and creative production for the studio's showroom, retail shop, and architectural projects."],
     role: { Role: "Art & Creative Director, Graphic Designer, Producer", Year: "2024 - 2026", Client: "Agathus Studios"},
