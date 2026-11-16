@@ -1,8 +1,8 @@
 /* ============ EDIT YOUR CONTENT HERE ============ */
 const SITE = {
   name: "Hyoeun Kelly Kang",
-  contact: "hyoeunkelly@email.com\nn@kivestudio\nLos Angeles",
-  about: ["Write a short bio here.", "Add a second paragraph if you like."]
+  contact: "hyoeunkelly@gmail.com\nInstagram @kivestudio\nb. Seoul, currently resides in Los Angeles",
+  about: ["a research-driven designer, creative director, and emerging curator working across art, design, and architecture. With an academic background in psychological sciences and cognitive science, my practice draws from disciplines including anthropology, philosophy, technology, and the built environment to investigate the relationship between larger systems and human experience. ", "My work spans spatial and graphic design, visual communication, creative direction, and curatorial practice. Grounded in interdisciplinary research, I approach these fields as interconnected modes of inquiry and expression, translating complex ideas into visual languages, environments, and experiences. I am particularly interested in how material, spatial, cultural, and technological systems shape human perception, cognition, and behavior."]
 };
 
 // Add a project = copy one block. Images go in /images and are listed in order.
